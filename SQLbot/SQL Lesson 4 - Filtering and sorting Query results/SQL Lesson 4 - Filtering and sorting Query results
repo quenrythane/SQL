@@ -1,0 +1,20 @@
+List all directors of Pixar movies (alphabetically), without duplicates ✓
+SELECT DISTINCT Director FROM movies
+ORDER BY Director;
+
+List the last four Pixar movies released (ordered from most recent to least)
+SELECT * FROM movies
+ORDER BY Year DESC
+LIMIT 4;
+
+
+Lst the first five Pixar movies sorted alphabetically
+SELECT * FROM movies
+ORDER BY Title
+LIMIT 5
+
+
+List the next five Pixar movies sorted alphabetically
+SELECT * FROM movies
+ORDER BY Title
+LIMIT 5 OFFSET 5
